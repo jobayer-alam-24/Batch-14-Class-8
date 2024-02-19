@@ -44,17 +44,33 @@
             background-color: darkblue;
             color: white;
            }
+           #np{
+            color: yellow;
+            font-size: 1.5rem;
+           }
+           .btn{
+                border: none;
+                width: 100px;
+                color: white;
+           }
+           .btn-1{
+            background-color: green;
+           }
+           .btn-2{
+            background-color: red;
+           }
         </style>
     </head>
 
     <body>
         <h1>Welcome Everyone!</h1>
         <div class="nav-bar">
-            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">About me</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Services</a>
+            <a href="#" class="same">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="same">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="same">About me</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="same">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="same">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index-2.html" id="np" target="_blank">Next page =></a>
         </div>
         <h2><marquee>We are learning CSS</marquee></h2>
 
@@ -87,7 +103,10 @@
                     <label for="email">E-mail: </label>
                     <input type="email"><br><br>
                     <label for="date">Appointment: </label>
-                    <input type="date">
+                    <input type="date"><br><br>
+
+                    <input type="submit" value="Submit"  class="btn-1 btn"></input>
+                    <input type="reset" value="Reset"  class="btn-2 btn"></input>
                 </form>
             </fieldset>    
         </div>
