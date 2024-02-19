@@ -1,69 +1,147 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Page-2</title>
-    </head>
-    <style>
-        h1{
-            text-align: center;
-            background-color: darkblue;
-            color: white;
-        }
-        .outer-green{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 800px;
-            height: 480px;
-            background-color: green;
-        }
-        .inner-red{
-            width: 300px;
-            height: 300px;
-            background-color: red;
-            border-radius: 50%;
-        }
-        .organge{
-            width: 800px;
-            height: 120px;
-            background-color: orange;
-        }
-        .white{
-            width: 800px;
-            height: 120px;
-        }
-        .green{
-            width: 800px;
-            height: 120px;
-            background-color: green;
-        }
-        .in-flag{
-            margin-top: 10px;
-        }
-    </style>
-    <body>
-        <h1>Bangladesh is our Motherland</h1>
-        <center>
-            <figure>
+<head>
+    <title>Page-2</title>
+</head>
+<style>
+    body {
+        background-color: rgba(0, 0, 0, 0.781);
+        margin-bottom: 500px;
+    }
+
+    h1 {
+        text-transform: capitalize;
+        text-align: center;
+        background-color: darkblue;
+        color: white;
+    }
+
+    .outer-green {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 800px;
+        height: 480px;
+        background-color: green;
+    }
+
+    figcaption {
+        color: white;
+    }
+
+    .inner-red {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+    .organge {
+        width: 800px;
+        height: 120px;
+        background-color: orange;
+    }
+
+    .white {
+        background-color: white;
+        width: 800px;
+        height: 120px;
+    }
+
+    .green {
+        width: 800px;
+        height: 120px;
+        background-color: green;
+    }
+
+    .in-flag {
+        margin-top: 10px;
+    }
+
+    .container-for-p {
+        position: relative;
+    }
+
+    .side-white {
+        background-color: #f5efef;
+        left: 18%;
+        position: absolute;
+        width: 160px;
+        height: 410px;
+    }
+
+    .left-green {
+        position: relative;
+        position: absolute;
+        left: 30%;
+        width: 650px;
+        background-color: #00401a;
+        height: 410px;
+    }
+
+    .moon_star {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+    }
+
+    .container {
+        width: fit-content;
+    }
+
+    .container:hover {
+        box-shadow: 3px 0px 32px 0px rgba(255, 255, 255, 0.75);
+    }
+
+    .container-for-p:hover .side-white,
+    .container-for-p:hover .left-green {
+    box-shadow: 3px 0px 32px 0px rgba(255, 255, 255, 0.75);
+}
+
+</style>
+<body>
+<h1>Bangladesh is our Motherland</h1>
+<center>
+    <figure>
+        <a href="https://bangladesh.gov.bd/index.php" target="_blank">
+            <div class="container">
                 <div class="outer-green">
                     <div class="inner-red"></div>
                 </div>
-                <figcaption>-----Bangladesh-----</figcaption>
-            </figure>
-        </center>
-        <h1>India is our Friend Country</h1>
-        <center>
-            <figure>
-                <div class="container">
-                    <div class="organge"></div>
-                    <div class="white">
-                        <center>
-                            <img src="images/charka.png" alt="Charka" width="140" height="105" class="in-flag">
-                        </center>
-                    </div>
-                    <div class="green"></div>
+            </div>
+        </a>
+        <figcaption>-----Bangladesh-----</figcaption>
+    </figure>
+</center>
+<h1>India is our Friend Country</h1>
+<center>
+    <figure>
+        <a href="https://www.india.gov.in/" target="_blank">
+            <div class="container">
+                <div class="organge"></div>
+                <div class="white">
+                    <center>
+                        <img src="images/charka.png" alt="Charka" width="140" height="105" class="in-flag">
+                    </center>
                 </div>
-                <figcaption>-----India-----</figcaption>
-            </figure>
-        </center>
-    </body>
+                <div class="green"></div>
+            </div>
+        </a>
+        <figcaption>-----India-----</figcaption>
+    </figure>
+</center>
+<h1>We achieved our victory from Pakistan</h1>
+<center>
+    <figure class="container-hv">
+           <a href="https://web.citizenportal.gov.pk/" target="_blank">
+            <div class="container-for-p">
+                <div class="side-white"></div>
+                <div class="left-green">
+                    <img src="images/mooon_star.png" alt="mooon_star" width="250" height="312" class="moon_star">
+                </div>
+            </div>
+           </a>
+    </figure>
+</center>
+</body>
 </html>
